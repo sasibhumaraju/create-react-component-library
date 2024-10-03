@@ -172,10 +172,13 @@ This will open the Storybook dashboard where you can view and interact with your
 }
 ```
 
+## Author 🤵
+- [@sasibhumaraju](https://www.github.com/sasibhumaraju)
+- 
+
 ## License 📜
 
 This project is licensed under the MIT License.
 
-## Author
-![Create React Component Library Logo](https://raw.githubusercontent.com/sasibhumaraju/create-react-component-library/refs/heads/main/.storybook/crcl.png?text=Create+React+Component+Library)
+
 
