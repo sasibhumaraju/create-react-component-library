@@ -1,18 +1,25 @@
 {
-  "name": "@sasibhumaraju/create-react-component-library",
-  "version": "2.0.0",
+  "name": "create-react-component-library",
+  "version": "3.0.0",
   "description": "Teamplate for creating react coponent library - (starter code)",
-  "bin": "./bin/cli.js",
+  "bin": {
+    "create-react-component-library": "bin/cli.js"
+  },
   "main": "dist/index.jsx",
   "module": "dist/index.es.js",
   "type": "module",
+  "files": [
+    "README.md",
+    "bin/",
+    "package.json"
+  ],
   "scripts": {
     "start": "storybook dev -p 6006",
     "build-lib": "rollup -c"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/sasibhumaraju/create-react-component-library"
+    "url": "git+https://github.com/sasibhumaraju/create-react-component-library.git"
   },
   "homepage": "https://github.com/sasibhumaraju/create-react-component-library?tab=readme-ov-file",
   "author": "@sasibhumaraju",
