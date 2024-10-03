@@ -1,6 +1,6 @@
 {
   "name": "@sasibhumaraju/create-react-component-library",
-  "version": "3.0.2",
+  "version": "3.0.3",
   "description": "Teamplate for creating react coponent library - (starter code)",
   "bin": {
     "create-react-component-library": "bin/cli.js"
