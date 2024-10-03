@@ -1,5 +1,5 @@
 {
-  "name": "create-react-component-library",
+  "name": "@sasibhumaraju/create-react-component-library",
   "version": "3.0.0",
   "description": "Teamplate for creating react coponent library - (starter code)",
   "bin": {
@@ -8,11 +8,6 @@
   "main": "dist/index.jsx",
   "module": "dist/index.es.js",
   "type": "module",
-  "files": [
-    "README.md",
-    "bin/",
-    "package.json"
-  ],
   "scripts": {
     "start": "storybook dev -p 6006",
     "build-lib": "rollup -c"
