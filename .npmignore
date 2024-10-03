@@ -1,0 +1,48 @@
+# Exclude node_modules from the npm package
+node_modules
+
+# Exclude build files and temporary files
+dist/
+build/
+coverage/
+.tmp/
+src/
+.gitignore
+# lockfiles
+package-lock.json
+yarn.lock
+
+# Exclude Storybook-related files
+.storybook/
+stories/
+
+# Exclude configuration files that are only for development
+rollup.config.js
+*.config.js
+*.config.json
+
+# Exclude test files
+__tests__/
+__mocks__/
+*.test.js
+*.spec.js
+*.test.jsx
+*.spec.jsx
+
+# Exclude documentation files (if not needed in the npm package)
+docs/
+*.mdx
+
+# Ignore example files or demo apps
+examples/
+demo/
+
+# Exclude local environment files
+.env
+.env.local
+.env.*.local
+
+# Ignore miscellaneous files
+*.log
+.DS_Store
+*.swp

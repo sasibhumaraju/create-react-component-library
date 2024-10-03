@@ -1,6 +1,7 @@
 
 # dependencies
 node_modules/
+bin/
 .pnp
 .pnp.js
 
@@ -30,6 +31,8 @@ yarn-error.log*
 .idea/
 *.sublime-project
 *.sublime-workspace
+
+
 
 # lockfiles
 package-lock.json
