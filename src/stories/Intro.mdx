@@ -1,0 +1,94 @@
+
+# Create React Component Library - Starter Command
+
+## Introduction
+
+Creating a reusable and scalable React component library allows developers to streamline their development process, encourage code reuse, and maintain consistency across multiple projects. By building your component library, you can design UI components that are easily sharable, customizable, and maintainable. The `create-react-component-library` starter command provides a seamless way to scaffold your component library, with essential configurations for bundling, transpiling, and publishing on npm.
+
+This guide walks you through creating your own React component library from scratch using modern development tools such as Rollup for bundling, Babel for transpiling JSX and ES6+ code, and Storybook for documenting and visually testing components. By the end, you'll be able to create a reusable component package that can be shared across different projects or published to npm.
+
+## Features
+
+- **Bundling with Rollup**: Efficiently bundle your React components into both CommonJS and ES module formats.
+- **Transpiling with Babel**: Use Babel to transpile modern ES6+ and JSX syntax to ensure compatibility across environments.
+- **Peer Dependency Management**: Automatically externalize peer dependencies like React to avoid bundling them with your library.
+- **CSS Modules and PostCSS**: Support for modular and scoped CSS styling with PostCSS for vendor prefixing and optimizations.
+- **Storybook Integration**: Easily document and test your components in isolation with live previews.
+- **PropTypes Support**: Built-in support for PropTypes for validating the types of props passed to your components.
+
+## Usage
+
+To get started with the `create-react-component-library` command, simply run the following in your terminal:
+
+```bash
+npx create-react-component-library
+```
+
+This command will generate the necessary folder structure and configuration files for a new React component library, allowing you to focus on building your components.
+
+### Folder Structure
+
+Upon running the command, you will see a folder structure similar to the following:
+
+```
+├── dist/                # Distribution files (bundled)
+├── src/                 # Source files (components)
+│   └── index.js         # Main export file
+├── rollup.config.js     # Rollup configuration for bundling
+├── package.json         # Project configuration and dependencies
+└── README.md            # Documentation
+```
+
+### Customizing Components
+
+Start by creating your components inside the `src/` folder. For example, let's create a `Button` component inside `src/components/Button/Button.jsx`:
+
+```jsx
+import React from 'react';
+import PropTypes from 'prop-types';
+import './Button.css';
+
+const Button = ({ label, onClick, primary }) => {
+  return (
+    <button className={primary ? 'btn-primary' : 'btn-secondary'} onClick={onClick}>
+      {label}
+    </button>
+  );
+};
+
+Button.propTypes = {
+  label: PropTypes.string.isRequired,
+  onClick: PropTypes.func,
+  primary: PropTypes.bool,
+};
+
+export default Button;
+```
+
+### Building the Library
+
+To build your component library and bundle it into distributable formats, simply run:
+
+```bash
+npm run build-lib
+```
+
+This will generate the bundled files inside the `dist/` folder, ready to be published or used in other projects.
+
+### Publishing to npm
+
+Once you are happy with your library, you can publish it to npm by following these steps:
+
+1. Login to npm using the command `npm login`.
+2. Ensure your package name is unique in `package.json`.
+3. Publish the package by running `npm publish`.
+
+This makes your React component library accessible to other developers who can install it via:
+
+```bash
+npm install your-library-name
+```
+
+## Conclusion
+
+By using the `create-react-component-library` starter command, you can quickly scaffold and set up a robust development environment for building and distributing React components. The combination of Rollup, Babel, and Storybook ensures that your library is performant, well-documented, and easy to maintain. Start creating your reusable React components today and contribute to a more efficient development workflow.

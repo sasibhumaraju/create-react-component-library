@@ -1,0 +1,45 @@
+{
+  "name": "react-component-library",
+  "version": "1.0.0",
+  "description": "Teamplate for creating react coponent library - (starter code)",
+  "main": "dist/index.jsx",
+  "module": "dist/index.es.js",
+  "type": "module",
+  "scripts": {
+    "start": "storybook dev -p 6006",
+    "build-lib": "rollup -c"
+  },
+  "author": "@sasibhumaraju",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/plugin-transform-runtime": "^7.25.4",
+    "@babel/preset-react": "^7.24.7",
+    "@babel/runtime": "^7.25.6",
+    "@chromatic-com/storybook": "^1.9.0",
+    "@rollup/plugin-babel": "^6.0.4",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@storybook/addon-essentials": "^8.3.2",
+    "@storybook/addon-interactions": "^8.3.2",
+    "@storybook/addon-links": "^8.3.2",
+    "@storybook/addon-onboarding": "^8.3.2",
+    "@storybook/blocks": "^8.3.2",
+    "@storybook/react": "^8.3.2",
+    "@storybook/react-vite": "^8.3.2",
+    "@storybook/test": "^8.3.2",
+    "rollup": "^4.22.0",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-postcss": "^4.0.2",
+    "storybook": "^8.3.2",
+    "storybook-css-modules-preset": "^1.1.1"
+  },
+  "dependencies": {
+    "prop-types": "^15.8.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "peerDependencies": {
+    "prop-types": "^15.8.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  }
+}
