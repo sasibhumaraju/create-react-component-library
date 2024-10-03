@@ -174,7 +174,7 @@ This will open the Storybook dashboard where you can view and interact with your
 
 ## Author 🤵
 - [@sasibhumaraju](https://www.github.com/sasibhumaraju)
-- 
+
 
 ## License 📜
 
