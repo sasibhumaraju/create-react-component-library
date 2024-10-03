@@ -20,7 +20,7 @@ To get started, simply run the following command:
 
 ```bash
 npx create-react-component-library
-
+```
 
 ### Scripts
 
